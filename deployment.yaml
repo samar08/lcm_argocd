@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lcm-deployment
+  labels:
+    app: lcm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lcm
+  template:
+    metadata:
+      labels:
+        app: lcm
+    spec:
+      containers:
+      - name: lcm
+        image: 731786372306.dkr.ecr.ap-south-1.amazonaws.com/final_custom_image:new_latest
+        ports:
+        - containerPort: 80
