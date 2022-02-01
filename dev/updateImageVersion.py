@@ -1,6 +1,6 @@
 import os
 newversion=os.environ['METALLBVERSION']
-deplin=open('deployment.yaml','r')
+deplin=open('/dev/deployment.yaml','r')
 
 #lines=deplin.readlines()
 newcontent=""
@@ -15,7 +15,7 @@ for line in deplin:
     newcontent+=line+"\n"
 #print(oldversion)
 deplin.close()
-deplout=open('deployment.yaml','w')
+deplout=open('/dev/deployment.yaml','w')
 deplout.write(newcontent)
 deplout.close()
     
