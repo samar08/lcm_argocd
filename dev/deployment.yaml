@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       - name: lcm
-        image: 731786372306.dkr.ecr.ap-south-1.amazonaws.com/final_custom_image:newlatest
+        image: 731786372306.dkr.ecr.ap-south-1.amazonaws.com/final_custom_image:old_version
         
