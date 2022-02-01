@@ -8,6 +8,13 @@ spec:
   source:
     repoURL: https://github.com/samar08/lcm_argocd.git
     targetRevision: HEAD
-    path:
+    path: dev
+  destination:
+    server: https://kubernetes.default.svc
+  
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
 
 
